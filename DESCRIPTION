@@ -1,7 +1,7 @@
 Package: reprocomp
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person(given = "First",
            family = "Last",
            role = c("aut", "cre"),
@@ -11,3 +11,6 @@ License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true
+Imports: bookdown
+URL: https://github.com/sprocketsullivan/reprocomp
+BugReports: https://github.com/sprocketsullivan/reprocomp/issues
