@@ -20,4 +20,4 @@ RUN . /etc/environment \
 
  # render the manuscript into a docx, you'll need to edit this if you've
  # customised the location and name of your main Rmd file
-  && R -e "rmarkdown::render_markdown('/reprocomp/analysis/paper/paper.Rmd',c("html_document","pdf_document"))"
+  && R -e "rmarkdown::render('/reprocomp/analysis/paper/paper.Rmd',c("html_document","pdf_document"))"
