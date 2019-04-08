@@ -5,9 +5,9 @@ author:
   - Author Two
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
-    bookdown::html_document2:
+    bookdown::pdf_document2:
       fig_caption: yes
-      reference_docx: "../templates/template.docx" # Insert path for the DOCX file
+      #reference_docx: "../templates/template.docx" # Insert path for the DOCX file
 bibliography: references.bib
 csl: "../templates/journal-of-archaeological-science.csl" # Insert path for the bib-style
 abstract: |
@@ -37,23 +37,6 @@ knitr::opts_chunk$set(
 )
 
 library(reprocomp) # Or use devtools::load_all('.', quiet = T) if your code is in script files, rather than as functions in the `/R` diretory
-```
-
-# Introduction
-
-Here is a citation [@Marwick2017]
-
-# Background
-
-```{r demo, eval = FALSE}
-1 + 1
-```
-
-# Methods
-
-# Results
-
-```{r}
 # Note the path that we need to use to access our data files when rendering this document
 #get the dataset overview
 #be sure to not have a proxy behind a firewall
@@ -66,7 +49,19 @@ writeBin(as.vector(f), tmp)
 #get data file
 dat <- rio::import(tmp)
 rm(f,tmp)
+```
 
+# Introduction
+
+Here is a citation [@Marwick2017]
+
+# Background
+
+# Methods
+
+# Results
+
+```{r}
 #format the year variable
 current.year<-as.integer(format(Sys.Date(),"%Y"))
 #use dply and pipe operator to crete data frame to plot later
