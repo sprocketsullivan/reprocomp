@@ -16,8 +16,7 @@ RUN . /etc/environment \
 
   # build this compendium package
   && R -e "devtools::install('/reprocomp', dep=TRUE)" \
-  && R -e "devtools::install_github('IQSS/dataverse-client-r', dep=TRUE)" \
-  && R -e "install.packages(c('readxl', 'rio'),dep=TRUE,repos='http://cran.rstudio.com/')" \
+  && R -e "install.packages(c('readxl', 'rio','dataverse'),dep=TRUE,repos='http://cran.rstudio.com/')" \
 
  # render the manuscript into a docx, you'll need to edit this if you've
  # customised the location and name of your main Rmd file
