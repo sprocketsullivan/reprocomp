@@ -5,7 +5,7 @@ author:
   - Author Two
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
-    bookdown::pdf_document2:
+    bookdown::html_document2:
       fig_caption: yes
       #reference_docx: "../templates/template.docx" # Insert path for the DOCX file
 bibliography: references.bib
