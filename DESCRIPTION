@@ -11,6 +11,14 @@ License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true
-Imports: bookdown
+Imports: bookdown,
+    dataverse (>= 0.2.0),
+    devtools (>= 2.0.1),
+    git2r (>= 0.25.2),
+    here (>= 0.1),
+    knitr (>= 1.22),
+    readxl (>= 1.3.1),
+    rio (>= 0.5.16),
+    tidyverse (>= 1.2.1)
 URL: https://github.com/sprocketsullivan/reprocomp
 BugReports: https://github.com/sprocketsullivan/reprocomp/issues
