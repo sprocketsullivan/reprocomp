@@ -2,7 +2,7 @@
 FROM rocker/verse:3.5.3
 
 # required
-MAINTAINER Your Name <your_email@somewhere.com>
+MAINTAINER Ulf <toelch@gmail.com>
 
 COPY . /reprocomp
 
@@ -17,9 +17,8 @@ RUN . /etc/environment \
   # build this compendium package
   && R -e "devtools::install('/reprocomp', dep=TRUE)" \
   && R -e "devtools::install_github('/IQSS/dataverse-client-r', dep=TRUE)" \
-  && R -e "install.packages(c('readxl', 'rio'),
-                           dependencies=TRUE,
-                           repos='http://cran.rstudio.com/')" \
+  && R -e "install.packages(c('readxl', 'rio'),dep=TRUE,repos='http://cran.rstudio.com/')" \
+
  # render the manuscript into a docx, you'll need to edit this if you've
  # customised the location and name of your main Rmd file
   && R -e "rmarkdown::render('/reprocomp/analysis/paper/paper.Rmd')"
