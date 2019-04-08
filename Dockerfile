@@ -13,6 +13,8 @@ RUN . /etc/environment \
   # e.g. need this for ggforce::geom_sina
   && sudo apt-get update \
   && sudo apt-get install libudunits2-dev -y \
+  && sudo apt-get install pandoc \
+  && sudo apt-get install pandoc-citeproc\
 
   # build this compendium package
   && R -e "devtools::install('/reprocomp', dep=TRUE)" \
