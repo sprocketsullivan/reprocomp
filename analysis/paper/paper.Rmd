@@ -28,10 +28,10 @@ library(tidyverse)
 library(rio)
 library(knitr)
 knitr::opts_chunk$set(
-  collapse = TRUE,
-  warning = FALSE,
-  message = FALSE,
-  echo = FALSE,
+  collapse = FALSE,
+  warning = TRUE,
+  message = TRUE,
+  echo = TRUE,
   comment = "#>",
   fig.path = "../figures/"
 )
