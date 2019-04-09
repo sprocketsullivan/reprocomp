@@ -19,6 +19,7 @@ Imports: bookdown,
     knitr (>= 1.22),
     readxl (>= 1.3.1),
     rio (>= 0.5.16),
-    tidyverse (>= 1.2.1)
+    tidyverse (>= 1.2.1),
+    rmarkdown
 URL: https://github.com/sprocketsullivan/reprocomp
 BugReports: https://github.com/sprocketsullivan/reprocomp/issues
